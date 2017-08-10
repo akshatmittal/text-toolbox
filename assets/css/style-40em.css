@@ -1,0 +1,79 @@
+@media only screen and (min-width: 40em) {
+  .body-header {
+    margin-top: 2em;
+  }
+  .menu {
+    padding: 0 2em;
+  }
+  .page {
+    margin-top: 19.5em;
+  }
+  body .page-header {
+    padding: 1.5em 0 0
+  }
+  .page-header textarea {
+    width: calc(100% - 3rem);
+    min-height: 30rem;
+    max-height: 60rem;
+    padding: 1.75rem;
+    font-size: 1.125rem;
+    line-height: 1.5;
+  }
+  .page-section {
+    margin: 0 1.5em;
+    padding: 0 2.25em 3em
+  }
+  body .page-section {
+    padding: 2.625em 3em 0
+  }
+  .page-section h3 {
+    font-size: 1.125em
+  }
+  .page-section p {
+    font-size: 1.4em
+  }
+  .page-footer {
+    padding: 2.25em 3em;
+  }
+  .page-footer-text a {
+    font-size: 1em
+  }
+  .panel-holder {
+    height: 19.5em;
+    padding: 4.5em 0 0;
+  }
+  .panel-counter {
+    width: calc(50% - 2.25em);
+    margin: 0 0.75em 0 1.5em;
+    height: 10em;
+  }
+  .panel-content-block {
+    padding: 1.75em 1.5em;
+  }
+  .panel-content-count {
+    font-size: 3em;
+    line-height: 1.4;
+  }
+  .panel-content-sub-count {
+    line-height: 1.6 !important
+  }
+  .panel-content-label-data {
+    margin-top: 0;
+  }
+  .panel-content-label-text {
+    margin-bottom: 0.5em
+  }
+
+  .panel-stats {
+    display: block;
+    width: calc(50% - 2.25em);
+    height: 10em;
+    margin: 0 1.5em 0 0.75em;
+  }
+
+  .panel-tools {
+    display: block;
+    /* height: 10em; */
+    margin: 1em 1.5em;
+  }
+}

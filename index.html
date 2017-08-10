@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#448AFF" />
+  <link rel="canonical" href="https://akshatmittal.com/text-toolbox/" />
+  <meta name="fragment" content="!" />
+  <title>Handy Text Toolbox</title>
+  <meta name="title" content="Handy Text Toolbox" />
+  <meta name="description" content="Handy Text Toolbox is a web tool for text stats such as the number of words, characters, unique words, sentences, paragraphs and pages in real time." />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@iakshatmittal" />
+  <meta name="twitter:title" content="Handy Text Toolbox" />
+  <meta name="twitter:description" content="Handy Text Toolbox is a web tool for text stats such as the number of words, characters, unique words, sentences, paragraphs and pages in real time." />
+  <meta name="twitter:creator" content="@iakshatmittal" />
+  <meta name="twitter:image" content="https://akshatmittal.com/text-toolbox/assets/images/hero.png?v=1" />
+
+  <meta property="og:title" content="Handy Text Toolbox" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://akshatmittal.com/text-toolbox/" />
+  <meta property="og:image" content="https://akshatmittal.com/text-toolbox/assets/images/hero.png?v=1" />
+  <meta property="og:description" content="Handy Text Toolbox is a web tool for text stats such as the number of words, characters, unique words, sentences, paragraphs and pages in real time." />
+  <meta property="og:site_name" content="Akshat Mittal" />
+  <meta property="fb:admins" content="100000581280466" />
+  <meta property="fb:app_id" content="1473140929606808" />
+  <meta property="article:author" content="https://www.facebook.com/itsreallyakshat" />
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" />
+
+  <link href="assets/css/normalize.css" rel="stylesheet" />
+  <link href="assets/css/style.css" rel="stylesheet" />
+  <link href="assets/css/style-40em.css" rel="stylesheet" />
+  <link href="assets/css/style-60em.css" rel="stylesheet" />
+
+  <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png?v=1" />
+</head>
+
+<body>
+  <header class="body-header">
+    <nav class="menu">
+      <h2 class="panel-header-title head-bold">Handy Text Toolbox</h2>
+    </nav>
+  </header>
+
+  <div class="overlay overlay-loading">
+    <div class="overlay-inner">
+      <div class="spinner">
+        <div class="rect1"></div>
+        <div class="rect2"></div>
+        <div class="rect3"></div>
+        <div class="rect4"></div>
+        <div class="rect5"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="overlay overlay-share">
+    <div class="overlay-inner">
+      <div class="panel">
+        <div class="panel-content-block">
+          <div class="panel-content-group">
+            <div class="panel-content-label">
+              <span class="panel-content-label-text sub-head-bold">Sharable Link</span>
+              <span class="panel-content-label-data">
+                <input type="text" name="select-shareable" value="https://akshatmittal.com/text-toolbox/" class="select-shareable" id="select-shareable" onfocus="this.select();document.execCommand('copy');">
+              </span>
+              <div class="panel-content-group button" id="button-close-share">
+                <h3 class="sub-head-bold">Close</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="body-content">
+    <article class="page">
+      <header class="page-header">
+        <textarea id="select-textarea" placeholder="Start typing here.." autofocus></textarea>
+      </header>
+
+      <section class="page-section" id="about">
+        <h3 class="head-bold">About Handy Text Toolbox</h3>
+        <p>Handy Text Toolbox is a simple text toolbox that tells you basic stats about whatever you are writing, such as the number of words, number of characters, unique words, etc. The toolbox also keeps useful stats handy, such as character limits for
+          a Tweet on Twitter, description length for Google and average post length on Facebook. For longer text content, the toolbox also has stats such as sentences, paragraphs and pages. These are the very basic stats often required when writing any
+          sort of content, be it a blog post or a long article or even a social media post. Handy Text Toolbox is designed to show you everything in one place without unnecessary hassle.</p>
+        <p>We often compose longer text content on larger screen devices such as tablets and laptops. For people writing very long content, the toolbox also shows the average reading time (based on 275 words per minute reading pace), average speaking time
+          (based on 180 words per minute speaking pace) and average writing time (based on 90 characters per minute writing pace). For people focusing on readability, the toolbox also generates the Flesch Reading score in real time giving you a fair estimate
+          of the readability of the text.</p>
+        <p>Apart from the general features, the toolbox also has options to load content from a text file on your device. Whatever you type here is also saved in the browser to prevent accidental loss of data, whatever you type is by default safe from closing
+          the tab accidentally or if the PC/browser crashes, all you have to do is to open this page again. We often want to share what we write and hence the editor also has an option to share content via a unique URL.</p>
+      </section>
+      <footer class="page-footer">
+        <div class="page-footer-text">
+          <a href="https://akshatmittal.com">Crafted with ♥ by Akshat Mittal</a>
+        </div>
+      </footer>
+    </article>
+
+    <div class="panel-holder">
+      <header class="panel-header">
+        <h2 class="panel-header-title head-bold">Stats</h2>
+      </header>
+
+      <section class="panel panel-counter">
+        <div class="panel-content-block">
+          <div class="panel-content-group">
+            <h3 class="sub-head-bold">Words</h3>
+            <span id="select-words" class="panel-content-count">0</span>
+            <div class="panel-content-sub">
+              <span id="select-u-words" class="panel-content-sub-count head-bold">0</span>
+              <span class="sub-head-bold">Unique</span>
+            </div>
+          </div>
+          <div class="panel-content-group">
+            <h3 class="sub-head-bold">Characters</h3>
+            <span id="select-characters" class="panel-content-count">0</span>
+            <div class="panel-content-sub">
+              <span id="select-s-characters" class="panel-content-sub-count head-bold">0</span>
+              <span class="sub-head-bold">Excluding Spaces</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel panel-stats">
+        <div class="panel-content-block panel-content-block-one">
+          <div class="panel-content-group">
+            <div class="panel-content-module">
+              <div class="panel-content-label">
+                <span class="panel-content-label-text sub-head-bold">Twitter</span>
+                <span class="panel-content-label-data">
+                  <span id="select-count-twitter" class="panel-content-label-count count--twitter yes">140</span>
+                </span>
+              </div>
+            </div>
+            <div class="panel-content-module">
+              <div class="panel-content-label">
+                <span class="panel-content-label-text sub-head-bold">Google</span>
+                <span class="panel-content-label-data">
+                  <span id="select-count-google" class="panel-content-label-count count--google yes">160</span>
+                </span>
+              </div>
+            </div>
+            <div class="panel-content-module">
+              <div class="panel-content-label">
+                <span class="panel-content-label-text sub-head-bold">Facebook</span>
+                <span class="panel-content-label-data">
+                  <span id="select-count-facebook" class="panel-content-label-count count--facebook yes">250</span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="panel-content-block panel-content-block-one">
+          <div class="panel-content-group">
+            <div class="panel-content-module">
+              <div class="panel-content-label">
+                <span class="panel-content-label-text sub-head-bold">Sentences</span>
+                <span class="panel-content-label-data">
+                  <span id="select-sentences" class="panel-content-label-count">1</span>
+                </span>
+              </div>
+            </div>
+            <div class="panel-content-module">
+              <div class="panel-content-label">
+                <span class="panel-content-label-text sub-head-bold">Paragraphs</span>
+                <span class="panel-content-label-data">
+                  <span id="select-paragraphs" class="panel-content-label-count">1</span>
+                </span>
+              </div>
+            </div>
+            <div class="panel-content-module">
+              <div class="panel-content-label">
+                <span class="panel-content-label-text sub-head-bold">Pages</span>
+                <span class="panel-content-label-data">
+                  <span id="select-pages" class="panel-content-label-count">0.00</span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel panel-tools">
+        <div class="panel-content-block">
+          <div class="panel-content-group button" id="button-clear">
+            <h3 class="sub-head-bold">Clear</h3>
+          </div>
+          <div class="panel-content-group button" id="button-share">
+            <h3 class="sub-head-bold">
+              <span>Share</span>
+              <span class="load">
+                <div class="spinner">
+                  <div class="rect1"></div>
+                  <div class="rect2"></div>
+                  <div class="rect3"></div>
+                  <div class="rect4"></div>
+                  <div class="rect5"></div>
+                </div>
+              </span>
+            </h3>
+          </div>
+          <div class="panel-content-group button" id="button-load">
+            <h3 class="sub-head-bold">Load File</h3>
+            <input type="file" style="display:none;" accept="text/plain" id="load-hidden">
+          </div>
+        </div>
+      </section>
+
+      <section class="panel panel-time panel-large-only">
+        <div class="panel-content-block">
+          <div class="panel-content-group">
+            <div class="panel-content-module">
+              <div class="panel-content-label">
+                <span class="panel-content-label-text sub-head-bold">Reading Time</span>
+                <span class="panel-content-label-data">
+                  <span id="select-reading" class="panel-content-label-count">0 MINUTES, 0 SECONDS</span>
+                </span>
+              </div>
+            </div>
+            <div class="panel-content-module">
+              <div class="panel-content-label">
+                <span class="panel-content-label-text sub-head-bold">Speaking Time</span>
+                <span class="panel-content-label-data">
+                  <span id="select-speaking" class="panel-content-label-count">0 MINUTES, 0 SECONDS</span>
+                </span>
+              </div>
+            </div>
+            <div class="panel-content-module">
+              <div class="panel-content-label">
+                <span class="panel-content-label-text sub-head-bold">Writing Time</span>
+                <span class="panel-content-label-data">
+                  <span id="select-writing" class="panel-content-label-count">0 MINUTES, 0 SECONDS</span>
+                </span>
+              </div>
+            </div>
+            <div class="panel-content-module">
+              <div class="panel-content-label">
+                <span class="panel-content-label-text sub-head-bold">Flesch Reading Ease</span>
+                <span class="panel-content-label-data">
+                  <span id="select-readability" class="panel-content-label-count">MINIMUM 15 WORDS REQUIRED.</span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <script type="text/javascript" src="assets/js/helper.js"></script>
+  <script type="text/javascript" src="assets/js/script.js"></script>
+</body>
+</html>

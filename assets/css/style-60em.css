@@ -1,0 +1,73 @@
+@media only screen and (min-width: 60em) {
+  .menu {
+    width: calc(100% - 25em)
+  }
+  .page {
+    width: calc(100% - 25em);
+    height: 100%;
+    margin-top: 0;
+    padding-top: 0;
+  }
+  body .page-header {
+    padding: 5em 0 0
+  }
+  .page-header textarea {
+    min-height: 41.75rem;
+    padding: 1.5em;
+    font-size: 1.4em;
+    line-height: 1.5;
+  }
+  .page-section {
+    padding: 0 3em 3em
+  }
+  .panel-holder {
+    position: fixed;
+    width: 25em;
+    height: 100%;
+    left: initial;
+    bottom: 0;
+    padding: 0;
+  }
+  .panel-header {
+    display: flex
+  }
+  .panel {
+    width: 100%;
+    margin: 1em 1.5em 0;
+    height: auto;
+  }
+  .panel-content-block {
+    padding: 1.25em 1.5em;
+  }
+  .panel-counter {
+    margin-top: 0;
+  }
+  .panel-content-module {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1em;
+  }
+  .panel-content-label-text {
+    margin-bottom: 0.5em
+  }
+  .panel-stats {
+    display: flex;
+    width: 100%;
+    height: auto;
+  }
+  .panel-stats .panel-content-block {
+    width: calc(50% - 2.5px);
+    display: inline-block;
+  }
+  .panel-stats .panel-content-block:last-child {
+    padding-left: 0;
+  }
+  .panel-time {
+    width: 100%;
+    height: auto;
+    margin: 1em 1.5em 0;
+  }
+  .panel-large-only {
+    display: flex;
+  }
+}
