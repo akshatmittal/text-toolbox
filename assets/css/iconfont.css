@@ -1,0 +1,34 @@
+@font-face {
+  font-family: 'Handy-Text-Editor';
+  src:  url('../fonts/Handy-Text-Editor.eot?tny5ad');
+  src:  url('../fonts/Handy-Text-Editor.eot?tny5ad#iefix') format('embedded-opentype'),
+    url('../fonts/Handy-Text-Editor.ttf?tny5ad') format('truetype'),
+    url('../fonts/Handy-Text-Editor.woff?tny5ad') format('woff'),
+    url('../fonts/Handy-Text-Editor.svg?tny5ad#Handy-Text-Editor') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+i.ico {
+  font-family: 'Handy-Text-Editor' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ico-download:before {
+  content: "\e902";
+}
+.ico-facebook:before {
+  content: "\e900";
+  color: #3b5998;
+}
+.ico-twitter:before {
+  content: "\e901";
+  color: #1da1f2;
+}

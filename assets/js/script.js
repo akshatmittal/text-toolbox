@@ -21,7 +21,9 @@ var Main = function() {
       buttonClear: Helper.$("#button-clear"),
       buttonShare: Helper.$("#button-share"),
       buttonLoad: Helper.$("#button-load"),
-      buttonCloseShare: Helper.$("#button-close-share")
+      buttonCloseShare: Helper.$("#button-close-share"),
+      buttonTwitter: Helper.$("#button-share-twitter"),
+      buttonFacebook: Helper.$("#button-share-facebook")
     },
     speed: {
       reading: 275,
@@ -175,6 +177,19 @@ Main.prototype.loadGist = function(id) {
     document.body.classList.remove("gistLoad");
   });
 }
+Main.prototype.socialShare = function(e) {
+  var sharableLink = encodeURIComponent(Helper.$("#select-shareable").value);
+  var facebook = "https://www.facebook.com/dialog/feed?app_id=1473140929606808&display=page&caption="+encodeURIComponent("Handy Text Toolbox")+"&link=" + sharableLink + "&redirect_uri=" + encodeURIComponent(this.options.misc.permalink + "assets/close.html");
+  var twitter = "https://twitter.com/intent/tweet?original_referer=" + sharableLink + "&ref_src=twsrc%5Etfw&text=" + encodeURIComponent("I'm sharing this text using Handy Text Toolbox!") + "&tw_p=tweetbutton&via=iakshatmittal&url=" + sharableLink;
+  switch (e) {
+    case "fb":window.open(facebook);
+      break;
+    case "twitter":window.open(twitter);
+      break;
+    default:
+      console.log("Na");
+  }
+}
 Main.prototype.init = function() {
   this.trackPage();
   var gid = location.hash.split("!/")[1];
@@ -194,6 +209,12 @@ Main.prototype.init = function() {
   }
   this.options.buttons.buttonShare.onclick = function() {
     Main.share();
+  };
+  this.options.buttons.buttonTwitter.onclick = function() {
+    Main.socialShare("twitter");
+  };
+  this.options.buttons.buttonFacebook.onclick = function() {
+    Main.socialShare("fb");
   };
   this.options.buttons.buttonCloseShare.onclick = function() {
     document.body.classList.remove("shareLink");

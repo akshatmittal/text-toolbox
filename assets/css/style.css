@@ -49,6 +49,10 @@ a {
   right: 0
 }
 
+body.gistLoad, body.shareLink {
+  overflow: hidden;
+}
+
 body.gistLoad .overlay-loading {
   display: block;
 }
@@ -92,8 +96,8 @@ body.shareLink .overlay-share {
 }
 
 .overlay-share .button {
-  margin-top: 1em;
   padding: 0.45em;
+  margin: -0.45em;
 }
 
 .overlay-inner .spinner {
@@ -477,8 +481,14 @@ body .page-section p {
   text-align: center;
 }
 
-.panel-tools .panel-content-group {
+.oneofthree .panel-content-group {
   width: 33.33333%;
+}
+.oneoftwo .panel-content-group {
+  width: 50%;
+}
+
+.panel-tools .panel-content-group {
   padding: 1em;
 }
 

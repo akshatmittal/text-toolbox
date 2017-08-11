@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
@@ -31,6 +32,7 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" />
 
   <link href="assets/css/normalize.css" rel="stylesheet" />
+  <link href="assets/css/iconfont.css" rel="stylesheet" />
   <link href="assets/css/style.css" rel="stylesheet" />
   <link href="assets/css/style-40em.css" rel="stylesheet" />
   <link href="assets/css/style-60em.css" rel="stylesheet" />
@@ -67,6 +69,14 @@
               <span class="panel-content-label-data">
                 <input type="text" name="select-shareable" value="https://akshatmittal.com/text-toolbox/" class="select-shareable" id="select-shareable" onfocus="this.select();document.execCommand('copy');">
               </span>
+              <div class="panel-content-block oneoftwo">
+                <div class="panel-content-group button" id="button-share-twitter">
+                  <i class="ico ico-twitter"></i>
+                </div>
+                <div class="panel-content-group button" id="button-share-facebook">
+                  <i class="ico ico-facebook"></i>
+                </div>
+              </div>
               <div class="panel-content-group button" id="button-close-share">
                 <h3 class="sub-head-bold">Close</h3>
               </div>
@@ -187,7 +197,7 @@
       </section>
 
       <section class="panel panel-tools">
-        <div class="panel-content-block">
+        <div class="panel-content-block oneofthree">
           <div class="panel-content-group button" id="button-clear">
             <h3 class="sub-head-bold">Clear</h3>
           </div>
@@ -255,4 +265,5 @@
   <script type="text/javascript" src="assets/js/helper.js"></script>
   <script type="text/javascript" src="assets/js/script.js"></script>
 </body>
+
 </html>
