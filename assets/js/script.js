@@ -118,7 +118,7 @@ Main.prototype.writer = function() {
   this.values.pages = (this.values.words / 400).toFixed(2);
 }
 Main.prototype.social = function() {
-  this.values.twitter = Helper.s(this.values.characters, 140);
+  this.values.twitter = Helper.s(this.values.characters, 280);
   this.values.google = Helper.s(this.values.characters, 160);
   this.values.facebook = Helper.s(this.values.characters, 250);
 }
